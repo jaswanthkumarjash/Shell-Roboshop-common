@@ -27,10 +27,10 @@ check_root () {
 
 VALIDATE () {
     if [ $1 -ne 0 ]; then
-        echo "$2 ...$R FAILED$N"
+        echo -e "$2 ...$R FAILED$N"
         exit 2
     else
-        echo "$2 ...$G SUCCESS$N"
+        echo -e "$2 ...$G SUCCESS$N"
     fi
 }
 
